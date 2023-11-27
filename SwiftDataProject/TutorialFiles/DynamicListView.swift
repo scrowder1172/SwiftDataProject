@@ -27,7 +27,7 @@ struct DynamicListView: View {
                 
                 Spacer()
                 
-                Text(String(user.jobs.count))
+                Text(String(user.unwrappedJobs.count))
                     .fontWeight(.black)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
@@ -50,8 +50,8 @@ struct DynamicListView: View {
         let job1: Job = Job(name: "Organize sock drawer", priority: 3)
         let job2: Job = Job(name: "Make plans with Alex", priority: 4)
         
-        user1.jobs.append(job1)
-        user1.jobs.append(job2)
+        user1.jobs?.append(job1)
+        user1.jobs?.append(job2)
     }
 }
 
