@@ -21,6 +21,10 @@ struct SwiftDataProjectApp: App {
                     .tabItem {
                         Label("Users", systemImage: "person.3.fill")
                     }
+                SampleUsersView()
+                    .tabItem {
+                        Label("Sample Users", systemImage: "person.2.crop.square.stack")
+                    }
             }
             
         }
