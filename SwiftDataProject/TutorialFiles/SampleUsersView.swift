@@ -102,15 +102,27 @@ struct SampleUsersView: View {
     }
     
     func addSampleUsers() {
-        let first = User(name: "Ed Sheeran", city: "London", joinDate: .now.addingTimeInterval(86400 * -10))
-        let second = User(name: "Rosa Diaz", city: "New York", joinDate: .now.addingTimeInterval(86400 * -5))
-        let third = User(name: "Roy Kent", city: "London", joinDate: .now.addingTimeInterval(86400 * 5))
-        let fourth = User(name: "Johnny English", city: "London", joinDate: .now.addingTimeInterval(86400 * 10))
+        
+        let approxSecondsInDay: Double = 86400
+        
+        func createUser(_ namePassed: String, _ cityPassed: String, _ daysAgoJoined: Double) -> User {
+            return User(name: namePassed, city: cityPassed, joinDate: .now.addingTimeInterval(approxSecondsInDay * daysAgoJoined))
+        }
+        
+//        let first = User(name: "Ed Sheeran", city: "London", joinDate: .now.addingTimeInterval(approxSecondsInDay * -10))
+//        let second = User(name: "Rosa Diaz", city: "New York", joinDate: .now.addingTimeInterval(approxSecondsInDay * -5))
+//        let third = User(name: "Roy Kent", city: "London", joinDate: .now.addingTimeInterval(approxSecondsInDay * 5))
+//        let fourth = User(name: "Johnny English", city: "London", joinDate: .now.addingTimeInterval(approxSecondsInDay * 10))
+        let firstUser: User = createUser("Ed Sheeran", "London", -10)
+        let secondUser: User = createUser("Rosa Diaz", "New York", -5)
+        let thirdUser: User = createUser("Roy Kent", "London", 5)
+        let fourthUser: User = createUser("Johnny English", "London", 10)
+        
 
-        modelContext.insert(first)
-        modelContext.insert(second)
-        modelContext.insert(third)
-        modelContext.insert(fourth)
+        modelContext.insert(firstUser)
+        modelContext.insert(secondUser)
+        modelContext.insert(thirdUser)
+        modelContext.insert(fourthUser)
     }
 }
 
