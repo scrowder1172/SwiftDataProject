@@ -10,6 +10,8 @@ import SwiftData
 
 struct DynamicListView: View {
     
+    @Environment(\.modelContext) var modelContext
+    
     @Query var users: [User]
     
     init(minimumJoinDate: Date, sortOrder: [SortDescriptor<User>]) {
@@ -34,6 +36,22 @@ struct DynamicListView: View {
                     .clipShape(.capsule)
             }
         }
+        .toolbar {
+            Button("Add Sample") {
+                addSample()
+            }
+        }
+    }
+    
+    func addSample() {
+        let user1: User = User(name: "Piper Chapman", city: "New York", joinDate: .now)
+        modelContext.insert(user1)
+        
+        let job1: Job = Job(name: "Organize sock drawer", priority: 3)
+        let job2: Job = Job(name: "Make plans with Alex", priority: 4)
+        
+        user1.jobs.append(job1)
+        user1.jobs.append(job2)
     }
 }
 
