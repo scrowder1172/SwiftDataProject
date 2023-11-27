@@ -25,6 +25,11 @@ struct SwiftDataProjectApp: App {
                     .tabItem {
                         Label("Sample Users", systemImage: "person.2.crop.square.stack")
                     }
+                
+                DynamicUsersView()
+                    .tabItem {
+                        Label("Dynamic Users", systemImage: "line.3.horizontal.decrease.circle.fill")
+                    }
             }
             
         }
