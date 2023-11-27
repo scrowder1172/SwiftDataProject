@@ -30,6 +30,11 @@ struct SwiftDataProjectApp: App {
                     .tabItem {
                         Label("Dynamic Users", systemImage: "line.3.horizontal.decrease.circle.fill")
                     }
+                
+                JobsView()
+                    .tabItem {
+                        Label("Jobs", systemImage: "building.columns.circle")
+                    }
             }
             
         }

@@ -18,6 +18,7 @@
 		5206636E2B152BD20000D2EB /* DynamicUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206636D2B152BD20000D2EB /* DynamicUsersView.swift */; };
 		520663702B152C760000D2EB /* DynamicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206636F2B152C760000D2EB /* DynamicListView.swift */; };
 		520663722B1547D50000D2EB /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663712B1547D50000D2EB /* Job.swift */; };
+		520663742B154F470000D2EB /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663732B154F470000D2EB /* JobsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5206636D2B152BD20000D2EB /* DynamicUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUsersView.swift; sourceTree = "<group>"; };
 		5206636F2B152C760000D2EB /* DynamicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicListView.swift; sourceTree = "<group>"; };
 		520663712B1547D50000D2EB /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		520663732B154F470000D2EB /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				5206636D2B152BD20000D2EB /* DynamicUsersView.swift */,
 				5206636F2B152C760000D2EB /* DynamicListView.swift */,
 				520663712B1547D50000D2EB /* Job.swift */,
+				520663732B154F470000D2EB /* JobsView.swift */,
 			);
 			path = TutorialFiles;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				5206636C2B150F840000D2EB /* SampleUsersView.swift in Sources */,
 				520663722B1547D50000D2EB /* Job.swift in Sources */,
 				520663702B152C760000D2EB /* DynamicListView.swift in Sources */,
+				520663742B154F470000D2EB /* JobsView.swift in Sources */,
 				520663572B14F9650000D2EB /* SwiftDataProjectApp.swift in Sources */,
 				5206636E2B152BD20000D2EB /* DynamicUsersView.swift in Sources */,
 				520663662B1500C20000D2EB /* User.swift in Sources */,
