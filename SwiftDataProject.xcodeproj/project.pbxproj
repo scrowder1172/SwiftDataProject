@@ -11,6 +11,7 @@
 		520663592B14F9650000D2EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663582B14F9650000D2EB /* ContentView.swift */; };
 		5206635B2B14F9660000D2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206635A2B14F9660000D2EB /* Assets.xcassets */; };
 		5206635E2B14F9660000D2EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206635D2B14F9660000D2EB /* Preview Assets.xcassets */; };
+		520663662B1500C20000D2EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663652B1500C20000D2EB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		520663582B14F9650000D2EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5206635A2B14F9660000D2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5206635D2B14F9660000D2EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		520663652B1500C20000D2EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				520663562B14F9650000D2EB /* SwiftDataProjectApp.swift */,
 				520663582B14F9650000D2EB /* ContentView.swift */,
+				520663642B1500AB0000D2EB /* TutorialFiles */,
 				5206635A2B14F9660000D2EB /* Assets.xcassets */,
 				5206635C2B14F9660000D2EB /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				5206635D2B14F9660000D2EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		520663642B1500AB0000D2EB /* TutorialFiles */ = {
+			isa = PBXGroup;
+			children = (
+				520663652B1500C20000D2EB /* User.swift */,
+			);
+			path = TutorialFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				520663592B14F9650000D2EB /* ContentView.swift in Sources */,
 				520663572B14F9650000D2EB /* SwiftDataProjectApp.swift in Sources */,
+				520663662B1500C20000D2EB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
