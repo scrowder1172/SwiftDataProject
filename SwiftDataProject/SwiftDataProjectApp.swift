@@ -12,7 +12,17 @@ import SwiftData
 struct SwiftDataProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Label("Content", systemImage: "globe")
+                    }
+                Users()
+                    .tabItem {
+                        Label("Users", systemImage: "person.3.fill")
+                    }
+            }
+            
         }
         .modelContainer(for: User.self)
     }
