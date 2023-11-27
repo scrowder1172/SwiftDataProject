@@ -13,6 +13,8 @@ import SwiftData
     var city: String
     var joinDate: Date
     
+    var jobs: [Job] = [Job]()
+    
     init(name: String, city: String, joinDate: Date) {
         self.name = name
         self.city = city
