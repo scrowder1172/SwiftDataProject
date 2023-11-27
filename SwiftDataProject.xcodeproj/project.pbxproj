@@ -14,6 +14,7 @@
 		520663662B1500C20000D2EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663652B1500C20000D2EB /* User.swift */; };
 		520663682B1501370000D2EB /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663672B1501370000D2EB /* EditUserView.swift */; };
 		5206636A2B15044C0000D2EB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663692B15044C0000D2EB /* UsersView.swift */; };
+		5206636C2B150F840000D2EB /* SampleUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5206636B2B150F840000D2EB /* SampleUsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		520663652B1500C20000D2EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		520663672B1501370000D2EB /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
 		520663692B15044C0000D2EB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		5206636B2B150F840000D2EB /* SampleUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				520663652B1500C20000D2EB /* User.swift */,
 				520663672B1501370000D2EB /* EditUserView.swift */,
 				520663692B15044C0000D2EB /* UsersView.swift */,
+				5206636B2B150F840000D2EB /* SampleUsersView.swift */,
 			);
 			path = TutorialFiles;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				520663592B14F9650000D2EB /* ContentView.swift in Sources */,
 				520663682B1501370000D2EB /* EditUserView.swift in Sources */,
 				5206636A2B15044C0000D2EB /* UsersView.swift in Sources */,
+				5206636C2B150F840000D2EB /* SampleUsersView.swift in Sources */,
 				520663572B14F9650000D2EB /* SwiftDataProjectApp.swift in Sources */,
 				520663662B1500C20000D2EB /* User.swift in Sources */,
 			);
