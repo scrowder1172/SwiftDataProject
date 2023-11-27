@@ -6,13 +6,26 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct DynamicListView: View {
+    
+    @Query var users: [User]
+    
+    init(minimumJoinDate: Date) {
+        _users = Query(filter: #Predicate<User> { user in
+            user.joinDate >= minimumJoinDate
+        }, sort: \User.name)
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(users) { user in
+            Text(user.name)
+        }
     }
 }
 
 #Preview {
-    DynamicListView()
+    DynamicListView(minimumJoinDate: .now)
+        .modelContainer(for: User.self)
 }
