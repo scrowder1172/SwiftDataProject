@@ -14,6 +14,38 @@ struct SampleUsersView: View {
     
     @Query(sort: \User.name) var allUsers: [User]
     
+    @Query(filter: #Predicate<User> { user in
+        user.name.contains("R")
+    },
+        sort: \User.name
+    ) var uppercaseRUsers: [User]
+    
+    @Query(filter: #Predicate<User> { user in
+        user.name.localizedStandardContains("R")
+    },
+        sort: \User.name
+    ) var mixedCaseRUsers: [User]
+    
+    @Query(filter: #Predicate<User> { user in
+        user.name.localizedStandardContains("R") &&
+        user.city == "London"
+    },
+        sort: \User.name
+    ) var mixedCaseRLondonUsers: [User]
+    
+    @Query(filter: #Predicate<User> { user in
+        if user.name.localizedStandardContains("R") {
+            if user.city == "London" {
+                return true
+            } else
+            { return false }
+        } else {
+            return false
+        }
+    },
+        sort: \User.name
+    ) var longerFilterVersion: [User]
+    
     @State private var showingWarning: Bool = false
     
     var body: some View {
@@ -21,6 +53,30 @@ struct SampleUsersView: View {
             List {
                 Section("All Users") {
                     ForEach(allUsers) { user in
+                        Text(user.name)
+                    }
+                }
+                
+                Section("Uppercase R Users") {
+                    ForEach(uppercaseRUsers) { user in
+                        Text(user.name)
+                    }
+                }
+                
+                Section("Mixed Case R Users") {
+                    ForEach(mixedCaseRUsers) { user in
+                        Text(user.name)
+                    }
+                }
+                
+                Section("Mixed Case R London Users") {
+                    ForEach(mixedCaseRLondonUsers) { user in
+                        Text(user.name)
+                    }
+                }
+                
+                Section("Mixed Case R London Users (Longer Filter)") {
+                    ForEach(longerFilterVersion) { user in
                         Text(user.name)
                     }
                 }
