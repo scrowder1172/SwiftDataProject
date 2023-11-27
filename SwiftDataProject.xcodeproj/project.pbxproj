@@ -13,7 +13,7 @@
 		5206635E2B14F9660000D2EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5206635D2B14F9660000D2EB /* Preview Assets.xcassets */; };
 		520663662B1500C20000D2EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663652B1500C20000D2EB /* User.swift */; };
 		520663682B1501370000D2EB /* EditUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663672B1501370000D2EB /* EditUserView.swift */; };
-		5206636A2B15044C0000D2EB /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663692B15044C0000D2EB /* Users.swift */; };
+		5206636A2B15044C0000D2EB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520663692B15044C0000D2EB /* UsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		5206635D2B14F9660000D2EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		520663652B1500C20000D2EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		520663672B1501370000D2EB /* EditUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserView.swift; sourceTree = "<group>"; };
-		520663692B15044C0000D2EB /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		520663692B15044C0000D2EB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				520663652B1500C20000D2EB /* User.swift */,
 				520663672B1501370000D2EB /* EditUserView.swift */,
-				520663692B15044C0000D2EB /* Users.swift */,
+				520663692B15044C0000D2EB /* UsersView.swift */,
 			);
 			path = TutorialFiles;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 			files = (
 				520663592B14F9650000D2EB /* ContentView.swift in Sources */,
 				520663682B1501370000D2EB /* EditUserView.swift in Sources */,
-				5206636A2B15044C0000D2EB /* Users.swift in Sources */,
+				5206636A2B15044C0000D2EB /* UsersView.swift in Sources */,
 				520663572B14F9650000D2EB /* SwiftDataProjectApp.swift in Sources */,
 				520663662B1500C20000D2EB /* User.swift in Sources */,
 			);
